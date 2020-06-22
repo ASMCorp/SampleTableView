@@ -34,9 +34,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return numbers.count
     }
     
-    //put iteam on each row
+    //put item on each row
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        //create a 
         let cell: TableViewCell = tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifire) as! TableViewCell
         cell.label.text = String(numbers[indexPath.row])
         return cell
